@@ -1,3 +1,5 @@
+<p align="right"><b>🇧🇷 Português</b> · <a href="README.en.md">🇺🇸 English</a></p>
+
 <div align="center">
 
 <img src="assets/banner.png" alt="Help Desk Lab" width="100%" />
@@ -102,13 +104,17 @@ XP e **8 níveis de cargo**, conquistas (incluindo **badges ocultos**), **certif
 
 <div align="center">
 
-| Central de Monitoramento (NOC) | Terminal interativo |
-|:--:|:--:|
-| <img src="assets/shot-noc.png" width="420" /> | <img src="assets/shot-terminal.png" width="420" /> |
+<b>Central de Monitoramento (NOC)</b><br/>
+<img src="assets/shot-noc.png" alt="Central de Monitoramento (NOC)" width="80%" />
 
-| Painel Executivo | Experiência mobile |
-|:--:|:--:|
-| <img src="assets/shot-executive.png" width="420" /> | <img src="assets/shot-mobile.png" width="200" /> |
+<b>Terminal interativo</b><br/>
+<img src="assets/shot-terminal.png" alt="Terminal interativo" width="80%" />
+
+<b>Painel Executivo</b><br/>
+<img src="assets/shot-executive.png" alt="Painel Executivo" width="80%" />
+
+<b>Experiência mobile</b><br/>
+<img src="assets/shot-mobile.png" alt="Experiência mobile" width="34%" />
 
 </div>
 
