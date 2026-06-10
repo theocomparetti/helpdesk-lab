@@ -169,9 +169,6 @@ python -m http.server 8000
 ```
 Depois acesse `http://localhost:8000`.
 
-### Publicar no GitHub Pages
-O projeto já é compatível com GitHub Pages (caminhos relativos + roteamento por hash). Basta ativar **Settings → Pages → Deploy from branch → `main` / root**. Inclui um arquivo `.nojekyll` para evitar processamento do Jekyll.
-
 ---
 
 ## 👤 Autor
