@@ -75,9 +75,13 @@ body {
 
 .brand { display: flex; align-items: center; gap: 12px; padding: 6px 8px 18px; }
 .brand__logo {
-  font-size: 26px; line-height: 1;
-  filter: drop-shadow(0 0 10px var(--accent-glow));
+  width: 40px; height: 40px; flex: none;
+  display: grid; place-items: center;
+  border-radius: 11px;
+  background: var(--panel-2); border: 1px solid var(--border);
+  color: var(--accent);
 }
+.brand__logo .ico-svg { width: 22px; height: 22px; }
 .brand__text { display: flex; flex-direction: column; }
 .brand__text strong { font-size: 16px; font-weight: 800; letter-spacing: -.3px; }
 .brand__text small { font-size: 11px; color: var(--text-mute); letter-spacing: .4px; text-transform: uppercase; }
