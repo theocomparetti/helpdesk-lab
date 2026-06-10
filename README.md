@@ -140,17 +140,6 @@ O projeto já é compatível com GitHub Pages (caminhos relativos + roteamento p
 
 ---
 
-## 🧭 Possíveis melhorias futuras
-
-- [ ] **Ranking global real** com backend leve (Cloudflare Functions + KV/D1)
-- [ ] Contas de usuário opcionais para sincronizar progresso entre dispositivos
-- [ ] Exportação do relatório de desempenho em PDF
-- [ ] Modo turma/multiplayer para uso em cursos
-- [ ] Internacionalização (i18n)
-- [ ] Mais cenários de incidentes e laboratórios de rede
-
----
-
 ## 👤 Autor
 
 **Théo Comparetti**
