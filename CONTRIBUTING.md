@@ -54,6 +54,7 @@ python -m http.server 8000
 
 ## ✅ Antes de abrir um PR
 
+- Rode a suíte de testes: **`npm test`** (usa o runner nativo do Node, sem dependências).
 - Teste no desktop **e** no mobile (sem rolagem horizontal).
 - Confira o console: **zero erros**.
 - Não quebre fluxos existentes nem a persistência.

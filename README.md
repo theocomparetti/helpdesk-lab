@@ -13,6 +13,7 @@ Help Desk, Suporte Técnico, Infraestrutura e Troubleshooting.
 
 [![Demo ao vivo](https://img.shields.io/badge/▶_Demo_ao_vivo-acessar-38bdf8?style=for-the-badge)](https://theocomparetti.github.io/helpdesk-lab/)
 
+[![CI](https://github.com/theocomparetti/helpdesk-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/theocomparetti/helpdesk-lab/actions/workflows/ci.yml)
 [![Licença](https://img.shields.io/badge/licença-MIT-38bdf8?style=flat-square)](LICENSE)
 [![Vanilla JS](https://img.shields.io/badge/Vanilla_JS-sem_dependências-0ea5e9?style=flat-square)](#-tecnologias-utilizadas)
 [![Responsivo](https://img.shields.io/badge/responsivo-mobile_first-34d399?style=flat-square)](#-responsividade)

@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "start": "npx --yes serve .",
-    "dev": "npx --yes serve ."
+    "dev": "npx --yes serve .",
+    "test": "node --test"
   },
   "keywords": [
     "help-desk",
