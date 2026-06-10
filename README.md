@@ -43,18 +43,52 @@ O Help Desk Lab cria um **ambiente seguro e realista** para treinar exatamente a
 
 ---
 
+## ⚙️ Como funciona
+
+O ciclo é simples e envolvente: você **escolhe um desafio** → **investiga** com ferramentas reais → **decide** a melhor conduta → recebe um **feedback técnico** com as competências treinadas → ganha **XP**, sobe de **nível** e desbloqueia **conquistas**. Quanto mais você resolve, mais cenários avançados são liberados.
+
+A plataforma abre num **hub guiado**: logo na primeira tela o usuário entende o que fazer, vê a **Missão do Dia**, sua **sequência (streak)** e atalhos para começar — sem se perder no meio de tantas opções.
+
+---
+
 ## ✨ Funcionalidades
 
-| Área | Recursos |
-|------|----------|
-| **Operação** | Central de Chamados, Central de E-mails, Central de Monitoramento (NOC), Modo Pressão, Incidente Crítico |
-| **Prática técnica** | Terminal CMD interativo, Máquina Windows simulada, Laboratório de Redes, Acesso Remoto, Análise de Logs, Simulador de Diagnóstico |
-| **Carreira & gestão** | Trilhas de Carreira, Simulador de Entrevistas, Simulador de SLA, Reunião com Gestores, Painel Executivo, Análise de Desempenho |
-| **Aprendizado** | Base de Conhecimento pesquisável, IA Analista (assistente), Histórico de casos, Treino Relâmpago, Desafio Diário |
-| **Gamificação** | XP e níveis, conquistas (com badges ocultos), certificações, ranking, streak diário, missões e **Missão do Dia** |
-| **Destaque** | **"Dia na Vida de um Analista"** — simula um expediente completo (08:00 → 18:00) com fila dinâmica, relógio corporativo, SLA e relatório final |
+São **28 módulos** organizados em quatro pilares. Abaixo, a visão geral e o detalhe dos principais.
 
-> 🔒 **Privacidade primeiro:** consentimento de armazenamento (LGPD), dados 100% locais, sem servidores nem rastreamento.
+| Pilar | Módulos |
+|------|----------|
+| **Operação & atendimento** | Central de Chamados · Central de E-mails · Monitoramento (NOC) · Modo Pressão · Incidente Crítico |
+| **Prática técnica** | Terminal CMD · Máquina Windows · Laboratório de Redes · Acesso Remoto · Análise de Logs · Diagnóstico · Desafios Surpresa |
+| **Carreira & gestão** | Trilhas de Carreira · Entrevistas · Simulador de SLA · Reunião com Gestores · Painel Executivo · Desempenho · Certificações |
+| **Aprendizado & engajamento** | Base de Conhecimento · IA Analista · Histórico de casos · Treino Relâmpago · Desafio Diário · Missões |
+
+### 🎫 Atendimento realista
+- **Central de Chamados** — tickets reais com nome do usuário, setor, prioridade e horário. Você lê o relato (muitas vezes vago ou mal escrito), investiga e escolhe a conduta certa, recebendo a explicação técnica e as competências treinadas.
+- **Central de E-mails** — uma caixa de entrada onde cada usuário escreve do seu jeito (leigo, diretor apressado, impaciente, colaborativo). O desafio é **interpretar e classificar** a real demanda.
+- **Monitoramento (NOC)** — painel de operações com status em tempo real de servidores, VPN, DNS, DHCP e impressoras. Cada alerta crítico vira um caso de **causa raiz**.
+
+### 💻 Investigação de verdade
+- **Terminal CMD interativo** — um prompt funcional com `ipconfig`, `ping`, `tracert`, `nslookup`, `netstat`, `route print`, `gpupdate` e outros. As saídas **mudam conforme o cenário** — você descobre a causa, não chuta a resposta.
+- **Máquina Windows simulada** — resolva navegando pelo sistema (Serviços, Conexões de Rede, Gerenciador de Tarefas), como numa estação corporativa real.
+- **Laboratório de Redes** — corrija configurações quebradas (IP, máscara, gateway, DNS) com diagrama interativo.
+- **Acesso Remoto · Análise de Logs · Diagnóstico** — conecte na máquina do usuário e colete evidências, leia logs com **dicas graduais**, ou encontre a causa raiz a partir dos sintomas.
+
+### 🚨 Pressão e tomada de decisão
+- **Incidente Crítico** — eventos P1 (VPN caiu, DNS fora, sistema de vendas indisponível) com **relógio correndo** e decisões em sequência.
+- **Modo Pressão** — vários chamados ao mesmo tempo: priorize e resolva contra o cronômetro.
+- **Desafios Surpresa** — cenários **multi-causa** em que um sintoma esconde dois problemas distintos.
+
+### 🧭 Carreira e gestão
+- **Trilhas de Carreira** (Estagiário → Especialista), **Simulador de Entrevistas** (perguntas reais de recrutador com autoavaliação), **Simulador de SLA** (priorização por impacto × urgência) e **Reunião com Gestores** (justificar suas decisões).
+- **Painel Executivo** — indicadores de gestor: SLA cumprido, satisfação dos usuários, eficiência e tempo médio de atendimento. A **Análise de Desempenho** mostra seu raio-x (precisão, pontos fortes e a melhorar).
+
+### 🏆 "Dia na Vida de um Analista" — o carro-chefe
+Uma simulação que **amarra tudo**: um expediente completo das **08:00 às 18:00**, com **relógio corporativo** que avança conforme suas ações, **fila dinâmica** de chamados que chegam ao longo do dia, **SLA** por chamado, **consequências** (a satisfação sobe ou cai), documentação obrigatória e um **relatório de desempenho** ao fim do expediente.
+
+### 🎮 Gamificação e engajamento
+XP e **8 níveis de cargo**, conquistas (incluindo **badges ocultos**), **certificações**, ranking, **streak diário**, **meta diária**, **Missão do Dia** e **Treino Relâmpago** (5 desafios em 5 minutos).
+
+> 🔒 **Privacidade primeiro:** consentimento de armazenamento (LGPD), dados 100% locais, sem servidores nem rastreamento. O nome é usado apenas para exibição no ranking.
 
 ---
 
