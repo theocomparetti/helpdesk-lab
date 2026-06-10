@@ -9,11 +9,17 @@
 Uma plataforma de **simulação e treinamento prático** para profissionais e estudantes de
 Help Desk, Suporte Técnico, Infraestrutura e Troubleshooting.
 
+[![Demo ao vivo](https://img.shields.io/badge/▶_Demo_ao_vivo-acessar-38bdf8?style=for-the-badge)](https://theocomparetti.github.io/helpdesk-lab/)
+
 [![Licença](https://img.shields.io/badge/licença-MIT-38bdf8?style=flat-square)](LICENSE)
 [![Vanilla JS](https://img.shields.io/badge/Vanilla_JS-sem_dependências-0ea5e9?style=flat-square)](#-tecnologias-utilizadas)
 [![Responsivo](https://img.shields.io/badge/responsivo-mobile_first-34d399?style=flat-square)](#-responsividade)
 [![Build](https://img.shields.io/badge/build-não_necessário-a78bfa?style=flat-square)](#-como-executar-localmente)
 [![Status](https://img.shields.io/badge/status-completo-34d399?style=flat-square)](#)
+
+<br />
+
+<img src="assets/demo-flow.gif" alt="Demonstração: resolver um chamado e ganhar XP" width="85%" />
 
 </div>
 
