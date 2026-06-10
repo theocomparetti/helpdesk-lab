@@ -130,6 +130,8 @@ XP and **8 job levels**, achievements (including **hidden badges**), **certifica
 - **Google Fonts** — Inter and JetBrains Mono
 - **Zero runtime dependencies** · **Zero build step**
 
+> 📐 **Curious about the technical decisions?** See the **[Architecture & Technical Decisions](docs/ARCHITECTURE.md)** document — it covers the reactive rendering model, the module pattern, state management and the trade-offs made. *(Written in Portuguese.)*
+
 ---
 
 ## 📱 Responsiveness

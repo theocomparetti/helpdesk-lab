@@ -130,6 +130,8 @@ XP e **8 níveis de cargo**, conquistas (incluindo **badges ocultos**), **certif
 - **Google Fonts** — Inter e JetBrains Mono
 - **Zero dependências de runtime** · **Zero etapa de build**
 
+> 📐 **Quer entender as decisões técnicas?** Veja o documento de **[Arquitetura & Decisões Técnicas](docs/ARCHITECTURE.md)** — explica o modelo de renderização reativo, o padrão de módulos, a gestão de estado e os trade-offs assumidos.
+
 ---
 
 ## 📱 Responsividade
