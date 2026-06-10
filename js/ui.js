@@ -128,20 +128,38 @@ HDL.ui = (function () {
     setTimeout(() => { t.classList.add('is-out'); setTimeout(() => t.remove(), 260); }, ms);
   }
 
-  /* ---- Modal ---- */
+  /* ---- Modal (acessível: role=dialog, foco preso, restaura foco ao fechar) ---- */
   function modal({ title, sub, body, width }) {
     const root = $('#modalRoot');
     root.innerHTML = '';
+    const prevFocus = document.activeElement; // para restaurar depois
+    const titleId = 'modal-title-' + Math.random().toString(36).slice(2, 8);
+
     const close = () => {
       root.classList.remove('is-open');
       setTimeout(() => { root.innerHTML = ''; }, 220);
       document.removeEventListener('keydown', onKey);
+      if (prevFocus && typeof prevFocus.focus === 'function') prevFocus.focus();
     };
-    const onKey = (e) => { if (e.key === 'Escape') close(); };
-    const m = el('div', { class: 'modal' },
+
+    const focusables = () => Array.from(
+      m.querySelectorAll('button, [href], input, textarea, select, [tabindex]:not([tabindex="-1"])')
+    ).filter((n) => !n.disabled && n.offsetParent !== null);
+
+    const onKey = (e) => {
+      if (e.key === 'Escape') { e.preventDefault(); close(); return; }
+      if (e.key !== 'Tab') return;
+      const f = focusables();
+      if (!f.length) { e.preventDefault(); m.focus(); return; }
+      const first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    };
+
+    const m = el('div', { class: 'modal', role: 'dialog', 'aria-modal': 'true', 'aria-labelledby': titleId, tabindex: '-1' },
       el('div', { class: 'modal__head' },
         el('div', {},
-          el('h2', { text: title }),
+          el('h2', { id: titleId, text: title }),
           sub ? el('div', { class: 'sub', text: sub }) : null
         ),
         el('button', { class: 'modal__close', onclick: close, 'aria-label': 'Fechar', text: '✕' })
@@ -150,7 +168,7 @@ HDL.ui = (function () {
     );
     if (width) m.style.width = `min(${width}px, 100%)`;
     root.append(el('div', { class: 'modal-ov', onclick: close }), m);
-    requestAnimationFrame(() => root.classList.add('is-open'));
+    requestAnimationFrame(() => { root.classList.add('is-open'); m.focus(); });
     document.addEventListener('keydown', onKey);
     return { close, root };
   }

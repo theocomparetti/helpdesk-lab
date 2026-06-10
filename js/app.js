@@ -46,7 +46,10 @@
 
   function bindNav() {
     $$('.nav__item').forEach(item => {
-      item.addEventListener('click', () => {
+      // href torna o item focável por teclado e semanticamente um link de navegação
+      item.setAttribute('href', '#' + item.dataset.route);
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
         location.hash = '#' + item.dataset.route;
         HDL.ui.sound.click();
       });
@@ -62,8 +65,10 @@
     backdrop.addEventListener('click', closeSidebar);
     // barra de navegação inferior (mobile)
     $$('.bottom-nav__item').forEach(item => {
-      item.addEventListener('click', () => {
+      if (item.dataset.route) item.setAttribute('href', '#' + item.dataset.route);
+      item.addEventListener('click', (e) => {
         if (item.id === 'bottomMenu') { openSidebar(); HDL.ui.sound.click(); return; }
+        e.preventDefault();
         location.hash = '#' + item.dataset.route;
         HDL.ui.sound.click();
       });

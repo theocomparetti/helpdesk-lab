@@ -144,6 +144,18 @@ A experiência foi desenhada **mobile-first**, com qualidade equivalente a um ap
 
 ---
 
+## ♿ Acessibilidade
+
+A interface foi construída para ser utilizável também por teclado e leitores de tela:
+
+- **Navegação por teclado** em todos os itens de menu e ações, com **anel de foco visível** (`:focus-visible`).
+- **Modais acessíveis** — `role="dialog"`, `aria-modal`, rótulo associado ao título, **focus trap** (Tab/Shift+Tab ciclam dentro do modal), fechar com **Esc** e **retorno do foco** ao elemento de origem.
+- **Skip link** ("Pular para o conteúdo") e **landmarks** de navegação com `aria-label`.
+- **Ícones decorativos** marcados como `aria-hidden`.
+- Respeito a **`prefers-reduced-motion`** para quem prefere menos animação.
+
+---
+
 ## 📂 Estrutura do projeto
 
 ```

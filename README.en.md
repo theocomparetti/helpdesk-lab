@@ -144,6 +144,18 @@ The experience was designed **mobile-first**, with quality on par with a native 
 
 ---
 
+## ♿ Accessibility
+
+The interface was built to be usable with a keyboard and screen readers as well:
+
+- **Keyboard navigation** across every menu item and action, with a **visible focus ring** (`:focus-visible`).
+- **Accessible modals** — `role="dialog"`, `aria-modal`, a label tied to the title, a **focus trap** (Tab/Shift+Tab cycle inside the modal), **Esc** to close and **focus return** to the originating element.
+- **Skip link** ("Skip to content") and navigation **landmarks** with `aria-label`.
+- **Decorative icons** marked as `aria-hidden`.
+- Respects **`prefers-reduced-motion`** for users who prefer less motion.
+
+---
+
 ## 📂 Project structure
 
 ```
