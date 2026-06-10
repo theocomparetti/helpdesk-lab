@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Help Desk Lab — plataforma de treinamento prático para Suporte Técnico, Help Desk, Infraestrutura e Atendimento de TI. Pratique com chamados reais, terminal interativo e laboratórios de rede." />
+  <meta name="theme-color" content="#0b1120" />
+  <title>Help Desk Lab — Central de Treinamento de Suporte Técnico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=8" />
+  <link rel="stylesheet" href="css/advanced.css?v=8" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>" />
+</head>
+<body>
+  <div id="app">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand__logo">🛠️</span>
+        <div class="brand__text">
+          <strong>Help Desk Lab</strong>
+          <small>Central de Treinamento</small>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <div class="nav__group">Operação</div>
+        <a class="nav__item" data-route="dashboard"><span class="nav__ico" data-icon="home"></span> Início</a>
+        <a class="nav__item" data-route="daylife"><span class="nav__ico" data-icon="building"></span> Dia na Vida do Analista</a>
+        <a class="nav__item" data-route="monitoring"><span class="nav__ico" data-icon="activity"></span> Monitoramento (NOC)</a>
+        <a class="nav__item" data-route="tickets"><span class="nav__ico" data-icon="ticket"></span> Central de Chamados</a>
+        <a class="nav__item" data-route="emails"><span class="nav__ico" data-icon="mail"></span> Central de E-mails</a>
+        <a class="nav__item" data-route="incident"><span class="nav__ico" data-icon="alert"></span> Incidente Crítico</a>
+        <a class="nav__item" data-route="pressure"><span class="nav__ico" data-icon="flame"></span> Modo Pressão</a>
+
+        <div class="nav__group">Prática técnica</div>
+        <a class="nav__item" data-route="diagnostics"><span class="nav__ico" data-icon="stethoscope"></span> Simulador de Diagnóstico</a>
+        <a class="nav__item" data-route="terminal"><span class="nav__ico" data-icon="terminal"></span> Terminal Interativo</a>
+        <a class="nav__item" data-route="windows"><span class="nav__ico" data-icon="monitor"></span> Máquina Windows</a>
+        <a class="nav__item" data-route="remote"><span class="nav__ico" data-icon="cast"></span> Acesso Remoto</a>
+        <a class="nav__item" data-route="network"><span class="nav__ico" data-icon="globe"></span> Laboratório de Redes</a>
+        <a class="nav__item" data-route="logs"><span class="nav__ico" data-icon="file"></span> Análise de Logs</a>
+        <a class="nav__item" data-route="surprise"><span class="nav__ico" data-icon="layers"></span> Desafios Surpresa</a>
+
+        <div class="nav__group">Carreira & Gestão</div>
+        <a class="nav__item" data-route="interview"><span class="nav__ico" data-icon="mic"></span> Modo Entrevista</a>
+        <a class="nav__item" data-route="sla"><span class="nav__ico" data-icon="clock"></span> Simulador de SLA</a>
+        <a class="nav__item" data-route="meeting"><span class="nav__ico" data-icon="users"></span> Reunião com Gestores</a>
+        <a class="nav__item" data-route="careers"><span class="nav__ico" data-icon="compass"></span> Trilhas de Carreira</a>
+        <a class="nav__item" data-route="performance"><span class="nav__ico" data-icon="barchart"></span> Análise de Desempenho</a>
+        <a class="nav__item" data-route="executive"><span class="nav__ico" data-icon="dashboard"></span> Painel Executivo</a>
+        <a class="nav__item" data-route="certifications"><span class="nav__ico" data-icon="award"></span> Certificações</a>
+
+        <div class="nav__group">Aprender & Progredir</div>
+        <a class="nav__item" data-route="quick"><span class="nav__ico" data-icon="zap"></span> Treino Relâmpago</a>
+        <a class="nav__item" data-route="assistant"><span class="nav__ico" data-icon="bot"></span> IA Analista</a>
+        <a class="nav__item" data-route="knowledge"><span class="nav__ico" data-icon="book"></span> Base de Conhecimento</a>
+        <a class="nav__item" data-route="history"><span class="nav__ico" data-icon="folder"></span> Histórico de Incidentes</a>
+        <a class="nav__item" data-route="missions"><span class="nav__ico" data-icon="target"></span> Missões</a>
+        <a class="nav__item" data-route="daily"><span class="nav__ico" data-icon="calendar"></span> Desafio Diário</a>
+        <a class="nav__item" data-route="achievements"><span class="nav__ico" data-icon="trophy"></span> Conquistas</a>
+      </nav>
+
+      <div class="sidebar__foot">
+        <button class="btn-ghost" id="toggleSound" title="Ativar/desativar sons"><span data-icon="volume" id="soundIco"></span> Sons</button>
+        <button class="btn-ghost btn-ghost--danger" id="resetProgress" title="Zerar progresso"><span data-icon="rotate"></span> Resetar</button>
+      </div>
+      <button class="sidebar__privacy" id="openPrivacy">Política de Privacidade · LGPD</button>
+    </aside>
+
+    <!-- Main -->
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn topbar__menu" id="menuToggle" aria-label="Menu">☰</button>
+        <div class="topbar__status">
+          <span class="status-dot"></span> Central operando
+        </div>
+        <button class="profile-chip" id="profileChip" title="Editar seu nome">
+          <span class="profile-chip__avatar" id="profileAvatar">A</span>
+          <span id="profileName">Analista</span>
+        </button>
+        <div class="topbar__spacer"></div>
+        <div class="hud">
+          <div class="hud__item" title="Nível atual">
+            <span class="hud__label">Nível</span>
+            <span class="hud__value" id="hudLevel">1</span>
+            <span class="hud__rank" id="hudRank">Aprendiz</span>
+          </div>
+          <div class="hud__xp">
+            <div class="hud__xpbar"><span id="hudXpFill"></span></div>
+            <small id="hudXpText">0 / 100 XP</small>
+          </div>
+          <div class="hud__item" title="Pontuação acumulada">
+            <span class="hud__label">Pontos</span>
+            <span class="hud__value hud__value--accent" id="hudPoints">0</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="view" id="view"><!-- conteúdo dinâmico --></main>
+    </div>
+  </div>
+
+  <!-- Barra de navegação inferior (mobile) -->
+  <nav class="bottom-nav" id="bottomNav">
+    <a class="bottom-nav__item" data-route="dashboard"><span class="bottom-nav__ico" data-icon="home"></span><span>Início</span></a>
+    <a class="bottom-nav__item" data-route="tickets"><span class="bottom-nav__ico" data-icon="ticket"></span><span>Chamados</span></a>
+    <a class="bottom-nav__item" data-route="daylife"><span class="bottom-nav__ico" data-icon="building"></span><span>Dia na Vida</span></a>
+    <a class="bottom-nav__item" data-route="quick"><span class="bottom-nav__ico" data-icon="zap"></span><span>Treino</span></a>
+    <button class="bottom-nav__item" id="bottomMenu"><span class="bottom-nav__ico" data-icon="menu"></span><span>Menu</span></button>
+  </nav>
+
+  <!-- Consentimento de privacidade / LGPD -->
+  <div class="consent" id="consent" hidden>
+    <div class="consent__main">
+      <span class="consent__ico" data-icon="shield"></span>
+      <div class="consent__text">
+        <strong>Privacidade &amp; armazenamento</strong>
+        <p>Esta plataforma guarda seu progresso (XP, desafios e conquistas) apenas no <b>armazenamento local do seu navegador</b>. O <b>nome</b> que você escolher serve <b>somente para exibir no ranking</b>. Nada é enviado a servidores nem compartilhado com terceiros. Você pode apagar tudo quando quiser em “Resetar”. Veja a <a id="privacyLink" tabindex="0">Política de Privacidade (LGPD)</a>.</p>
+      </div>
+    </div>
+    <div class="consent__actions">
+      <button class="btn" id="consentPrivacy">Política de Privacidade</button>
+      <button class="btn btn--primary" id="consentAccept">Aceitar e continuar</button>
+    </div>
+  </div>
+
+  <div class="backdrop" id="backdrop"></div>
+  <div class="toast-wrap" id="toastWrap"></div>
+  <div class="modal-root" id="modalRoot"></div>
+
+  <!-- Núcleo -->
+  <script src="js/ui.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/data-phase3.js"></script>
+  <script src="js/data-daylife.js"></script>
+  <script src="js/state.js"></script>
+  <!-- Módulos -->
+  <script src="js/modules/knowledge.js"></script>
+  <script src="js/modules/dashboard.js"></script>
+  <script src="js/modules/tickets.js"></script>
+  <script src="js/modules/diagnostics.js"></script>
+  <script src="js/modules/terminal.js"></script>
+  <script src="js/modules/network.js"></script>
+  <script src="js/modules/daily.js"></script>
+  <script src="js/modules/achievements.js"></script>
+  <script src="js/modules/monitoring.js"></script>
+  <script src="js/modules/windows.js"></script>
+  <script src="js/modules/interview.js"></script>
+  <script src="js/modules/sla.js"></script>
+  <script src="js/modules/pressure.js"></script>
+  <script src="js/modules/performance.js"></script>
+  <script src="js/modules/certifications.js"></script>
+  <script src="js/modules/surprise.js"></script>
+  <!-- Módulos Fase 3 -->
+  <script src="js/modules/emails.js"></script>
+  <script src="js/modules/incident.js"></script>
+  <script src="js/modules/remote.js"></script>
+  <script src="js/modules/logs.js"></script>
+  <script src="js/modules/assistant.js"></script>
+  <script src="js/modules/meeting.js"></script>
+  <script src="js/modules/careers.js"></script>
+  <script src="js/modules/history.js"></script>
+  <script src="js/modules/executive.js"></script>
+  <script src="js/modules/missions.js"></script>
+  <script src="js/modules/daylife.js"></script>
+  <script src="js/modules/quick.js"></script>
+  <!-- Boot -->
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

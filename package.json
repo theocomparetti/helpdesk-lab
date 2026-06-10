@@ -1,0 +1,29 @@
+{
+  "name": "helpdesk-lab",
+  "version": "1.0.0",
+  "description": "Plataforma de simulação para treinar Help Desk e Suporte Técnico: chamados reais, terminal interativo, NOC e gamificação. 100% front-end, sem dependências.",
+  "private": true,
+  "scripts": {
+    "start": "npx --yes serve .",
+    "dev": "npx --yes serve ."
+  },
+  "keywords": [
+    "help-desk",
+    "it-support",
+    "technical-support",
+    "training",
+    "simulation",
+    "gamification",
+    "knowledge-base",
+    "troubleshooting",
+    "networking",
+    "vanilla-javascript",
+    "no-dependencies",
+    "spa",
+    "frontend",
+    "ux-ui",
+    "edtech"
+  ],
+  "author": "Théo Comparetti",
+  "license": "MIT"
+}

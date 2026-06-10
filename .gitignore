@@ -1,0 +1,27 @@
+# Dependências (caso sejam adicionadas no futuro)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores / IDEs
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs e temporários
+*.log
+*.tmp
+.cache/
+
+# Ferramentas locais de desenvolvimento
+.claude/
+
+# Material de divulgação (mantido localmente, fora do repositório)
+Carrossel-LinkedIn/
+assets/linkedin/*.png
